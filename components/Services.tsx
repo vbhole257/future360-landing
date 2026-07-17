@@ -60,12 +60,12 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {services.map(({ icon: Icon, title, short, gradient, bg }, i) => (
             <Link
               key={i}
               href="/know-more"
-              className={`group relative bg-gradient-to-br ${bg} border border-white/10 rounded-2xl p-7 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl block`}
+              className={`group relative bg-gradient-to-br ${bg} border border-white/10 rounded-2xl p-7 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]`}
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} bg-opacity-20 mb-5`}>

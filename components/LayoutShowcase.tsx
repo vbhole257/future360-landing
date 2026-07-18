@@ -1,9 +1,9 @@
 'use client'
 
 const mockups = [
-  { label: '@f360itsolutions', likes: '2.4K', screenshot: '/layout/ig1.jpg' },
-  { label: 'Campaign Results', likes: '1.8K', screenshot: '/layout/ig2.jpg' },
-  { label: 'Brand Launch', likes: '3.1K', screenshot: '/layout/ig3.jpg' },
+  { label: '@f360itsolutions', likes: '2.4K', screenshot: '/Assets/Images/Look and feel 1.png' },
+  { label: 'Campaign Results', likes: '1.8K', screenshot: '/Assets/Images/Look and feel 2.png' },
+  { label: 'Brand Launch', likes: '3.1K', screenshot: '/Assets/Images/Look and feel 3.png' },
 ]
 
 export default function LayoutShowcase() {
@@ -57,17 +57,8 @@ export default function LayoutShowcase() {
                   </div>
 
                   {/* Post area */}
-                  <div
-                    className="flex-1 mx-2 rounded-xl flex items-center justify-center text-white/20 text-xs border border-white/10"
-                    style={{
-                      background: `linear-gradient(135deg, hsl(${(i * 60 + 200) % 360}, 50%, 15%), hsl(${(i * 60 + 240) % 360}, 50%, 10%))`
-                    }}
-                  >
-                    {/* Screenshot placeholder */}
-                    <div className="text-center">
-                      <div className="text-2xl mb-2">📸</div>
-                      <p className="text-xs text-white/30">Add Screenshot</p>
-                    </div>
+                  <div className="flex-1 mx-2 rounded-xl flex items-center justify-center overflow-hidden border border-white/10 relative">
+                    <img src={item.screenshot} alt={item.label} className="w-full h-full object-cover" />
                   </div>
 
                   {/* IG action bar */}

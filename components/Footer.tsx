@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <Image src="/logo.png" alt="F360 Logo" width={100} height={40} className="h-10 w-auto mb-4" />
+          <Image src="/Assets/Images/F360 Logo.png" alt="F360 Logo" width={100} height={40} className="h-10 w-auto mb-4" />
           <p className="text-sm text-white/50 leading-relaxed">
             Innovate. Integrate. Elevate. — Helping modern businesses grow smarter, faster, and better.
           </p>
@@ -32,9 +32,9 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wider text-white/70 mb-4">Contact</h3>
           <div className="space-y-2 text-sm text-white/40">
-            <p>📞 +91 8889995985</p>
+            <p>📞 +91 88899 95985</p>
             <p>✉️ team@future360itsolutions.com</p>
-            <p>📍 Vijay Nagar, Indore (MP)</p>
+            <p>📍 Vijay Nagar, Indore</p>
           </div>
         </div>
 
@@ -43,9 +43,9 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-white/70 mb-4">Follow Us</h3>
           <div className="flex gap-3 flex-wrap">
             {[
-              { icon: Facebook, href: 'https://www.facebook.com/share/1FhLb2Ej8t/' },
-              { icon: Instagram, href: 'https://www.instagram.com/f360itsolutions' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/company/future360itsolutions' },
+              { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61550648030870' },
+              { icon: Instagram, href: 'https://www.instagram.com/f360itsolutions/' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/company/future360itsolutions/' },
             ].map(({ icon: Icon, href }, i) => (
               <a
                 key={i}

@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="F360 Logo" width={100} height={40} className="h-9 sm:h-11 w-auto" />
+          <Image src="/Assets/Images/F360 Logo.png" alt="F360 Logo" width={100} height={40} className="h-9 sm:h-11 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

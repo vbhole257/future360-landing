@@ -41,21 +41,40 @@ export default function AboutUs() {
           {/* Right: Content */}
           <div>
             <span className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3 block">
-              Who We Are
+              Company Overview
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 font-playfair leading-tight">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">F360</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Future 360</span>
             </h2>
 
             <p className="text-white/70 mb-4 leading-relaxed">
-              At F360 IT Solutions, we believe great work isn&apos;t just about going digital — it&apos;s about being <span className="text-white font-medium">impactful</span>. Founded in 2023 in Indore, we&apos;re a hybrid team combining creative firepower, strategic clarity, and cutting-edge tech to grow brands with purpose.
+              At F360 IT Solutions, we believe great work isn&apos;t just about going digital—it&apos;s about creating meaningful impact. Founded in 2023 in Indore, we are a hybrid team that combines creative excellence, strategic thinking, and cutting-edge technology to help brands grow with purpose.
             </p>
             <p className="text-white/70 mb-4 leading-relaxed">
-              From website development to AI-powered SEO, social media marketing, cloud, branding, and ad management — our <span className="text-blue-400 font-medium">360° service suite</span> is built to elevate businesses across education, e-commerce, housing, finance, and more.
+              From website development and AI-powered SEO to social media marketing, cloud solutions, branding, and advertising management, our 360° suite of services is designed to empower businesses across industries, including education, e-commerce, housing and construction, finance, news, and digital content.
+            </p>
+            <p className="text-white/70 mb-4 leading-relaxed">
+              But we don&apos;t stop at delivering results. We build brands, shape narratives, and create meaningful digital experiences while contributing to communities and proudly celebrating Bharat&apos;s rich cultural and civilizational heritage.
             </p>
             <p className="text-white/70 mb-8 leading-relaxed">
-              We leverage AI not just to optimise performance, but to personalise experiences, predict trends, and drive smarter decision-making. <span className="text-white font-medium">Strategy + Storytelling + AI = Future-ready growth.</span>
+              We leverage AI not only to optimise performance but also to personalise customer experiences, predict market trends, and enable smarter, faster, and more scalable decision-making for our clients. <br/><br/> <span className="text-white font-medium text-lg">Strategy + Storytelling + AI = Future-Ready Growth.</span>
             </p>
+
+            {/* Mission & Vision */}
+            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-blue-500/30 transition-colors">
+                <h3 className="text-blue-400 font-semibold mb-2">Our Mission</h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  Our mission is to simplify digital growth for modern businesses. We combine creative marketing, powerful technology, and actionable strategies to help brands cut through the noise, reach the right audience, and grow faster than ever before.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-blue-500/30 transition-colors">
+                <h3 className="text-blue-400 font-semibold mb-2">Our Vision</h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  We envision a future where digital growth is smart, sustainable, and accessible to all—a future where brands don&apos;t just survive online but thrive with confidence, clarity, and measurable results.
+                </p>
+              </div>
+            </div>
 
             <a
               href="#contact"

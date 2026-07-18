@@ -123,7 +123,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white/40 text-xs uppercase tracking-wider mb-1">Phone</p>
-                  <p className="text-white font-medium">+91 8889995985</p>
+                  <p className="text-white font-medium">+91 88899 95985</p>
                 </div>
               </div>
 
@@ -143,7 +143,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white/40 text-xs uppercase tracking-wider mb-1">Office</p>
-                  <p className="text-white font-medium">Vijay Nagar, Indore (MP)</p>
+                  <p className="text-white font-medium">Vijay Nagar, Indore</p>
                 </div>
               </div>
             </div>

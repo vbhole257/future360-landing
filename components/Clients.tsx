@@ -3,9 +3,16 @@
 import Image from 'next/image'
 
 const logos = [
-  '/clients/1.png', '/clients/2.png', '/clients/3.png',
-  '/clients/4.png', '/clients/5.png', '/clients/6.png',
-  '/clients/7.png', '/clients/8.png', '/clients/9.png', '/clients/10.png'
+  '/Assets/Images/clients/Balaji education Logo.png',
+  '/Assets/Images/clients/Buildfab Logo.png',
+  '/Assets/Images/clients/COTBAY Logo.png',
+  '/Assets/Images/clients/Envision 3D Logo.png',
+  '/Assets/Images/clients/I360feed logo.png',
+  '/Assets/Images/clients/Magnoux Logo.png',
+  '/Assets/Images/clients/Nidhishree Logo.png',
+  '/Assets/Images/clients/PTB Logo.png',
+  '/Assets/Images/clients/Shiva Logo.png',
+  '/Assets/Images/clients/TIB static.png',
 ]
 
 export default function Clients() {

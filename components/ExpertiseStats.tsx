@@ -5,9 +5,9 @@ import CountUp from 'react-countup'
 import { Users, Briefcase, Clock } from 'lucide-react'
 
 const stats = [
-  { icon: Users, label: 'Team Members', count: 12, suffix: '+', color: 'from-blue-500 to-cyan-500' },
-  { icon: Clock, label: 'Years of Experience', count: 2, suffix: '+', color: 'from-purple-500 to-blue-500' },
-  { icon: Briefcase, label: 'Completed Projects', count: 50, suffix: '+', color: 'from-cyan-500 to-teal-500' },
+  { icon: Users, label: 'Team Members', count: 23, suffix: '+', color: 'from-blue-500 to-cyan-500' },
+  { icon: Clock, label: 'Years of Experience', count: 5, suffix: '+', color: 'from-purple-500 to-blue-500' },
+  { icon: Briefcase, label: 'Completed Projects', count: 200, suffix: '+', color: 'from-cyan-500 to-teal-500' },
 ]
 
 export default function ExpertiseStats() {

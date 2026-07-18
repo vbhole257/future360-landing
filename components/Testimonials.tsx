@@ -25,21 +25,21 @@ export default function Testimonials() {
       name: 'Shiva Enterprises',
       role: 'Client',
       feedback:
-        "Creative strategies, engaging content, and consistent growth. The team understands audience behavior and delivers excellent results.",
+        "Creative strategies, engaging content, and consistent growth. The team understands audience behaviour and delivers excellent results.",
       stars: 5,
     },
     {
-      name: 'Nidhishree Anushthanam',
+      name: 'NidhiShree Anushthanam',
       role: 'Client',
       feedback:
-        "Professional, responsive, and user-friendly websites delivered on time with great attention to detail. Excellent brand identity solutions, from logo design to complete visual branding, with a premium and modern approach.",
+        "Professional, responsive, and user-friendly websites delivered on time with great attention to detail. Their branding expertise, from logo design to complete visual identity development, reflects a premium and modern approach.",
       stars: 5,
     },
     {
-      name: 'Envision 3D',
+      name: 'Envision3D',
       role: 'Client',
       feedback:
-        "A reliable IT and digital marketing company that focuses on quality, innovation, and client satisfaction. Highly recommended for businesses looking to grow online",
+        "A reliable IT and digital marketing company that prioritises quality, innovation, and client satisfaction. Highly recommended for businesses looking to grow their online presence.",
       stars: 5,
     },
   ]

@@ -11,6 +11,7 @@ import Footer from '@/components/Footer'
 import Clients from '@/components/Clients'
 import Achievements from '@/components/Achievements'
 import Testimonials from '@/components/Testimonials'
+import FounderProfile from '@/components/FounderProfile'
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
       <AboutUs />
       {/* Page 3: Experience & Expertise */}
       <ExpertiseStats />
+      {/* Founder Profile */}
+      <FounderProfile />
       {/* Page 5: Our Work */}
       <OurWork />
       {/* Page 6: Layout Showcase */}

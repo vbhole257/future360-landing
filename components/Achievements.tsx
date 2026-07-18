@@ -14,6 +14,9 @@ export default function Achievements() {
     { src: '/achievements/4.jpg', caption: 'Awarded by MP Govt for digital work' },
     { src: '/achievements/5.jpg', caption: 'Panel discussion at Startup Expo' },
     { src: '/achievements/6.jpg', caption: 'Featured in top marketing firms of India' },
+    { src: '/achievements/viral-26m.jpg', caption: '26M Views Viral Post', url: 'https://www.instagram.com/reel/C5JVtCgt7km/' },
+    { src: '/achievements/viral-5m.jpg', caption: '5M Views Viral Post', url: 'https://www.instagram.com/reel/DWnbuj7jFMI/' },
+    { src: '/achievements/viral-1m.jpg', caption: '1M Views Viral Post', url: 'https://www.instagram.com/p/DMI_PJrT_nu/' },
   ]
 
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
@@ -59,25 +62,36 @@ export default function Achievements() {
           </button>
 
           <div ref={sliderRef} className="keen-slider px-2">
-            {images.map((item, index) => (
-              <div
-                key={index}
-                className="keen-slider__slide bg-white rounded-xl border-2 border-blue-500 shadow-md overflow-hidden"
-              >
-                {item.caption && (
-                  <div className="text-center font-semibold text-sm text-[#0b1b3e] px-4 pt-4">
-                    {item.caption}
-                  </div>
-                )}
-                <Image
-                  src={item.src}
-                  alt={`Achievement ${index + 1}`}
-                  width={400}
-                  height={320}
-                  className="w-full h-[320px] object-contain p-4"
-                />
-              </div>
-            ))}
+            {images.map((item, index) => {
+              const content = (
+                <>
+                  {item.caption && (
+                    <div className="text-center font-semibold text-sm text-[#0b1b3e] px-4 pt-4">
+                      {item.caption}
+                    </div>
+                  )}
+                  <Image
+                    src={item.src}
+                    alt={`Achievement ${index + 1}`}
+                    width={400}
+                    height={320}
+                    className="w-full h-[320px] object-contain p-4"
+                  />
+                </>
+              )
+              
+              const className = `keen-slider__slide bg-white rounded-xl border-2 border-blue-500 shadow-md overflow-hidden ${item.url ? 'hover:border-blue-400 hover:shadow-blue-500/30 transition-all cursor-pointer' : ''}`
+
+              return item.url ? (
+                <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className={className}>
+                  {content}
+                </a>
+              ) : (
+                <div key={index} className={className}>
+                  {content}
+                </div>
+              )
+            })}
           </div>
 
           <button

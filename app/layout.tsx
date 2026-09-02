@@ -17,6 +17,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Future 360 IT Solutions | Innovate. Integrate. Elevate.",
   description: "F360 IT Solutions — Digital Marketing, Web Development, SEO, Branding & Ads Management. Based in Indore, growing brands nationwide.",
+  icons: {
+    icon: [
+      { url: "/Assets/Images/F360 Logo_without_bg_hero.png", type: "image/png" },
+    ],
+    shortcut: "/Assets/Images/F360 Logo_without_bg_hero.png",
+    apple: "/Assets/Images/F360 Logo_without_bg_hero.png",
+  },
 }
 
 export default function RootLayout({
@@ -27,6 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" type="image/png" />
+        <link rel="shortcut icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `document.documentElement.classList.add('light');document.documentElement.style.colorScheme='light';`,

@@ -25,21 +25,35 @@ export default function Testimonials() {
       name: 'Shiva Enterprises',
       role: 'Client',
       feedback:
-        "Creative strategies, engaging content, and consistent growth. The team understands audience behaviour and delivers excellent results.",
+        'Creative strategies, engaging content, and consistent growth. The team understands audience behaviour and delivers excellent results.',
       stars: 5,
     },
     {
       name: 'NidhiShree Anushthanam',
       role: 'Client',
       feedback:
-        "Professional, responsive, and user-friendly websites delivered on time with great attention to detail. Their branding expertise, from logo design to complete visual identity development, reflects a premium and modern approach.",
+        'Professional, responsive, and user-friendly websites delivered on time with great attention to detail. Their branding expertise, from logo design to complete visual identity development, reflects a premium and modern approach.',
       stars: 5,
     },
     {
       name: 'Envision3D',
       role: 'Client',
       feedback:
-        "A reliable IT and digital marketing company that prioritises quality, innovation, and client satisfaction. Highly recommended for businesses looking to grow their online presence.",
+        'A reliable IT and digital marketing company that prioritises quality, innovation, and client satisfaction. Highly recommended for businesses looking to grow their online presence.',
+      stars: 5,
+    },
+    {
+      name: 'Magnoux',
+      role: 'Client',
+      feedback:
+        'Working with F360 IT Solutions was effortless. They understood our requirements, maintained clear communication, and delivered a solution that was both functional and visually impressive.',
+      stars: 5,
+    },
+    {
+      name: 'Cotbay',
+      role: 'Client',
+      feedback:
+        'The team combined technical expertise with strategic thinking to deliver solutions that helped us strengthen our digital presence and connect with the right audience.',
       stars: 5,
     },
   ]
@@ -47,7 +61,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="bg-[#081b3e] py-24 text-white">
       <div className="max-w-7xl mx-auto px-4">
-<h2 className="text-4xl font-bold text-center mb-4">Client&apos;s Testimonial</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">Client Testimonials</h2>
         <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           At Future 360 IT Solutions, we are proud to have helped numerous clients achieve their digital marketing goals.
         </p>
@@ -56,7 +70,8 @@ export default function Testimonials() {
           {/* Arrow Left */}
           <button
             onClick={() => slider.current?.prev()}
-            className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 text-white bg-transparent hover:text-blue-400 transition"
+            className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 text-white/70 bg-transparent hover:text-blue-500 transition-colors p-1"
+            aria-label="Previous testimonial"
           >
             <ChevronLeft size={28} />
           </button>
@@ -83,7 +98,8 @@ export default function Testimonials() {
           {/* Arrow Right */}
           <button
             onClick={() => slider.current?.next()}
-            className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2 text-white bg-transparent hover:text-blue-400 transition"
+            className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2 text-white/70 bg-transparent hover:text-blue-500 transition-colors p-1"
+            aria-label="Next testimonial"
           >
             <ChevronRight size={28} />
           </button>

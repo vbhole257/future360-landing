@@ -24,44 +24,21 @@ const projects = [
     link: 'https://www.instagram.com/f360itsolutions',
     description: 'Next.js website with LMS integration',
   },
-  {
-    title: 'Restaurant Branding',
-    category: 'Branding',
-    thumbnail: '/work/project4.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: 'Complete brand identity — logo, menu, social presence',
-  },
-  {
-    title: 'Finance Startup SEO',
-    category: 'SEO',
-    thumbnail: '/work/project5.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: 'Ranked 15+ keywords on page 1 in 90 days',
-  },
-  {
-    title: 'News Portal Growth',
-    category: 'Social Media',
-    thumbnail: '/work/project6.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: '10x organic reach in 60 days through reels strategy',
-  },
 ]
 
 const categoryColors: Record<string, string> = {
   'Social Media': 'bg-pink-500/20 text-pink-300 border-pink-500/30',
   'Ads Management': 'bg-orange-500/20 text-orange-300 border-orange-500/30',
   'Web Development': 'bg-blue-500/20 text-blue-300 border-blue-500/30',
-  'Branding': 'bg-purple-500/20 text-purple-300 border-purple-500/30',
-  'SEO': 'bg-green-500/20 text-green-300 border-green-500/30',
 }
 
 export default function OurWork() {
   return (
-    <section id="work" className="bg-[#050d1f] text-white py-24">
+    <section id="work" className="bg-[#050d1f] text-white py-24 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3 block">
-            Portfolio
+            Featured Projects
           </span>
           <h2 className="text-4xl md:text-5xl font-bold font-playfair">
             Our{' '}
@@ -74,7 +51,7 @@ export default function OurWork() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <a
               key={i}
@@ -84,8 +61,7 @@ export default function OurWork() {
               className="group relative bg-[#0b1729] border border-white/10 rounded-2xl overflow-hidden hover:border-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/30 block"
             >
               {/* Thumbnail */}
-              <div className="relative h-52 bg-gradient-to-br from-blue-900/40 to-[#080f22] flex items-center justify-center overflow-hidden">
-                {/* Placeholder gradient since no images yet */}
+              <div className="relative h-56 bg-gradient-to-br from-blue-900/40 to-[#080f22] flex items-center justify-center overflow-hidden">
                 <div
                   className="absolute inset-0 opacity-30"
                   style={{
@@ -94,9 +70,9 @@ export default function OurWork() {
                 />
                 <div className="relative z-10 flex flex-col items-center gap-3">
                   <div className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-blue-600/50 transition-all duration-300">
-                    <Play size={22} className="text-white ml-1" />
+                    <Play size={22} className="!text-white ml-1" />
                   </div>
-                  <span className="text-white/60 text-xs">View Project</span>
+                  <span className="!text-white/90 text-xs font-medium">View Project</span>
                 </div>
 
                 {/* Hover overlay */}
@@ -109,7 +85,7 @@ export default function OurWork() {
                   <span className={`text-xs px-3 py-1 rounded-full border font-medium ${categoryColors[project.category] || 'bg-blue-500/20 text-blue-300 border-blue-500/30'}`}>
                     {project.category}
                   </span>
-                  <ExternalLink size={14} className="text-white/30 group-hover:text-blue-400 transition-colors" />
+                  <ExternalLink size={14} className="text-white/50 group-hover:text-blue-400 transition-colors" />
                 </div>
                 <h3 className="text-white font-semibold text-base mb-1 group-hover:text-blue-300 transition-colors">
                   {project.title}

@@ -18,7 +18,7 @@ const logos = [
 export default function Clients() {
   return (
     <section className="bg-[#080f22] py-14 px-4 border-y border-white/5 overflow-hidden">
-      <p className="text-center text-white/30 text-xs font-semibold uppercase tracking-widest mb-8">
+      <p className="text-center text-white/80 text-xs font-semibold uppercase tracking-widest mb-8">
         Trusted by Startups & Brands
       </p>
       <div className="relative overflow-hidden">
@@ -30,7 +30,7 @@ export default function Clients() {
               alt={`Client logo ${i}`}
               width={100}
               height={36}
-              className="grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all duration-300 object-contain"
+              className="opacity-100 transition-all duration-300 object-contain hover:scale-105"
             />
           ))}
         </div>

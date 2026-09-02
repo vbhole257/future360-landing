@@ -25,8 +25,8 @@ export default function FounderProfile() {
             <div className="relative rounded-2xl overflow-hidden border border-blue-500/20 shadow-2xl shadow-blue-900/30 aspect-[3/4]">
               {/* Note: Update src when actual image is ready */}
               <Image
-                src="/about/teamwork.gif"
-                alt="Avinash Singh Kushwah"
+                src="/Assets/Images/founder.jpg"
+                alt="Avinash Singh Kushwah - Founder"
                 fill
                 className="object-cover"
               />

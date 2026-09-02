@@ -25,8 +25,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} ${playfair.variable} font-poppins scroll-smooth antialiased bg-[#050d1f]`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add('light');document.documentElement.style.colorScheme='light';`,
+          }}
+        />
+      </head>
+      <body className={`${poppins.variable} ${playfair.variable} font-poppins scroll-smooth antialiased`}>
         {children}
       </body>
     </html>

@@ -2,11 +2,11 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-   images: {
+  images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
+  turbopack: {
+    root: process.cwd(),
   },
 };
 

@@ -24,7 +24,7 @@ export default function ExpertiseStats() {
   }, [])
 
   return (
-    <section className="bg-[#050d1f] text-white py-24 relative overflow-hidden">
+    <section id="stats" className="bg-[#050d1f] text-white py-24 relative overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 opacity-5"
         style={{

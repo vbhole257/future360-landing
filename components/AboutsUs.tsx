@@ -3,32 +3,25 @@
 import Image from 'next/image'
 
 export default function AboutUs() {
-  const logos = [
-    '/about/republic.png',
-    '/about/dainik-bhaskar.png',
-    '/about/ht.png',
-    '/about/india-saga.png',
-    '/about/dmn.png',
-  ]
-
   return (
     <section id="about" className="bg-[#080f22] text-white py-24 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-5"
+      <div
+        className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none"
         style={{ background: 'radial-gradient(ellipse at top right, #3b82f6, transparent 70%)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-
           {/* Left: Visual */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden border border-blue-500/20 shadow-2xl shadow-blue-900/30">
               <Image
-                src="/about/teamwork.gif"
-                alt="F360 Team"
-                width={500}
-                height={400}
+                src="/Assets/Images/office.jpg"
+                alt="Future 360 IT Solutions Office Workspace in Indore"
+                width={700}
+                height={525}
                 className="w-full h-auto object-cover"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#080f22]/60 to-transparent" />
             </div>
@@ -44,7 +37,10 @@ export default function AboutUs() {
               Company Overview
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 font-playfair leading-tight">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Future 360</span>
+              About{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                Future 360
+              </span>
             </h2>
 
             <p className="text-white/70 mb-4 leading-relaxed">
@@ -57,7 +53,8 @@ export default function AboutUs() {
               But we don&apos;t stop at delivering results. We build brands, shape narratives, and create meaningful digital experiences while contributing to communities and proudly celebrating Bharat&apos;s rich cultural and civilizational heritage.
             </p>
             <p className="text-white/70 mb-8 leading-relaxed">
-              We leverage AI not only to optimise performance but also to personalise customer experiences, predict market trends, and enable smarter, faster, and more scalable decision-making for our clients. <br/><br/> <span className="text-white font-medium text-lg">Strategy + Storytelling + AI = Future-Ready Growth.</span>
+              We leverage AI not only to optimise performance but also to personalise customer experiences, predict market trends, and enable smarter, faster, and more scalable decision-making for our clients. <br /><br />
+              <span className="text-white font-medium text-lg">Strategy + Storytelling + AI = Future-Ready Growth.</span>
             </p>
 
             {/* Mission & Vision */}
@@ -77,22 +74,11 @@ export default function AboutUs() {
             </div>
 
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-7 py-3 rounded-full transition-all duration-200 shadow-lg shadow-blue-900/40"
             >
               Work With Us
             </a>
-
-            <div className="mt-10">
-              <p className="text-white/40 text-xs uppercase tracking-widest mb-4">As Featured In</p>
-              <div className="flex flex-wrap gap-3">
-                {logos.map((src, idx) => (
-                  <div key={idx} className="bg-white rounded-lg p-2 h-10 w-20 flex items-center justify-center">
-                    <Image src={src} alt={`Media ${idx}`} width={60} height={24} className="object-contain" />
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

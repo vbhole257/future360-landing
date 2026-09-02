@@ -2,8 +2,8 @@
 
 const mockups = [
   { label: '@f360itsolutions', likes: '2.4K', screenshot: '/Assets/Images/Look and feel 1.png' },
-  { label: 'Campaign Results', likes: '1.8K', screenshot: '/Assets/Images/Look and feel 2.png' },
-  { label: 'Brand Launch', likes: '3.1K', screenshot: '/Assets/Images/Look and feel 3.png' },
+  { label: 'Campaign Results', likes: '1.8K', screenshot: '/Assets/Images/Look and feel 2.jpg' },
+  { label: 'Brand Launch', likes: '3.1K', screenshot: '/Assets/Images/Look and feel 3.jpg' },
 ]
 
 export default function LayoutShowcase() {
@@ -81,7 +81,7 @@ export default function LayoutShowcase() {
             href="https://www.instagram.com/f360itsolutions"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-white/70 hover:text-white px-6 py-3 rounded-full text-sm transition-all duration-200"
+            className="inline-flex items-center gap-2 border border-white/20 hover:border-blue-500 text-white/80 hover:text-blue-400 px-6 py-3 rounded-full text-sm transition-all duration-200"
           >
             Follow us on Instagram @f360itsolutions
           </a>

@@ -84,7 +84,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 z-50 w-12 h-12 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-900/50 transition-all duration-200 hover:scale-110"
       >
-        <Image src="/whatsapp.png" alt="WhatsApp" width={24} height={24} className="w-6 h-6" />
+        <Image src="/Assets/Images/whatsapp-removebg-preview.png" alt="WhatsApp" width={12} height={12} className="w-12 h-12" />
       </a>
 
       {/* Scroll to top */}

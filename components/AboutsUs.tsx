@@ -44,7 +44,7 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-white/70 mb-4 leading-relaxed">
-              At F360 IT Solutions, we believe great work isn&apos;t just about going digital—it&apos;s about creating meaningful impact. Founded in 2023 in Indore, we are a hybrid team that combines creative excellence, strategic thinking, and cutting-edge technology to help brands grow with purpose.
+              At F360 IT Solutions, we believe great work isn&apos;t just about going digital, it&apos;s about creating meaningful impact. Founded in 2023 in Indore, we are a hybrid team that combines creative excellence, strategic thinking, and cutting-edge technology to help brands grow with purpose.
             </p>
             <p className="text-white/70 mb-4 leading-relaxed">
               From website development and AI-powered SEO to social media marketing, cloud solutions, branding, and advertising management, our 360° suite of services is designed to empower businesses across industries, including education, e-commerce, housing and construction, finance, news, and digital content.
@@ -68,7 +68,7 @@ export default function AboutUs() {
               <div className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-blue-500/30 transition-colors">
                 <h3 className="text-blue-400 font-semibold mb-2">Our Vision</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  We envision a future where digital growth is smart, sustainable, and accessible to all—a future where brands don&apos;t just survive online but thrive with confidence, clarity, and measurable results.
+                  We envision a future where digital growth is smart, sustainable, and accessible to all, a future where brands don&apos;t just survive online but thrive with confidence, clarity, and measurable results.
                 </p>
               </div>
             </div>

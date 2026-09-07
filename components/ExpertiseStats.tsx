@@ -2,12 +2,13 @@
 
 import { useEffect, useRef, useState } from 'react'
 import CountUp from 'react-countup'
-import { Users, Briefcase, Clock } from 'lucide-react'
+import { Users, Briefcase, Clock, Globe } from 'lucide-react'
 
 const stats = [
   { icon: Users, label: 'Team Members', count: 23, suffix: '+', color: 'from-blue-500 to-cyan-500' },
   { icon: Clock, label: 'Years of Experience', count: 5, suffix: '+', color: 'from-purple-500 to-blue-500' },
   { icon: Briefcase, label: 'Completed Projects', count: 200, suffix: '+', color: 'from-cyan-500 to-teal-500' },
+  { icon: Globe, label: 'Countries', count: 7, suffix: '+', color: 'from-blue-400 to-emerald-400' },
 ]
 
 export default function ExpertiseStats() {
@@ -46,7 +47,7 @@ export default function ExpertiseStats() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {stats.map(({ icon: Icon, label, count, suffix, color }, i) => (
             <div
               key={i}

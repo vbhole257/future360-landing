@@ -41,7 +41,7 @@ export default function ContactSection() {
             </span>
           </h2>
           <p className="text-white/70 max-w-xl mx-auto">
-            Use our expertise to your advantage — get in touch with us today!
+            Use our expertise to your advantage. Get in touch with us today!
           </p>
         </div>
 

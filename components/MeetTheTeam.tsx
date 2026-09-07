@@ -61,7 +61,7 @@ function TeamCard({ member }: { member: typeof teamMembers[0] }) {
         <p className="text-white font-bold text-center text-base leading-snug mb-3">
           &ldquo;{member.memeCaption}&rdquo;
         </p>
-        <p className="text-blue-400 text-sm font-semibold mt-2">— {member.name}</p>
+        <p className="text-blue-400 text-sm font-semibold mt-2">{member.name}</p>
         <div className="mt-4 bg-blue-600/30 border border-blue-500/40 text-blue-300 text-xs px-3 py-1 rounded-full">
           {member.position}
         </div>

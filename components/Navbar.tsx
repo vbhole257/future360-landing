@@ -1,6 +1,6 @@
 'use client'
 
-import { Menu, Moon, Sun, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -114,7 +114,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* 3. Let's Talk CTA button + Dark/Light Theme Switcher */}
+        {/* 3. Let's Talk CTA button */}
         <div className="hidden md:flex items-center gap-4 shrink-0">
           <a
             href="/#contact"
@@ -122,27 +122,10 @@ export default function Navbar() {
           >
             Let&apos;s Talk
           </a>
-          <button
-            type="button"
-            onClick={toggleTheme}
-            className="theme-toggle"
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-          >
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
         </div>
 
-        {/* Mobile controls: Theme toggle + Hamburger menu */}
+        {/* Mobile controls: Hamburger menu */}
         <div className="flex md:hidden items-center gap-2 shrink-0">
-          <button
-            type="button"
-            onClick={toggleTheme}
-            className="theme-toggle"
-            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-          >
-            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
           <button
             type="button"
             className="text-white p-1"

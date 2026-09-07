@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Future 360 IT Solutions | Innovate. Integrate. Elevate.",
-  description: "F360 IT Solutions — Digital Marketing, Web Development, SEO, Branding & Ads Management. Based in Indore, growing brands nationwide.",
+  title: "Future 360 IT Solutions | Innovate Integrate Elevate",
+  description: "F360 IT Solutions: Digital Marketing, Web Development, SEO, Branding & Ads Management. Based in Indore, growing brands nationwide.",
   icons: {
     icon: [
       { url: "/Assets/Images/F360 Logo_without_bg_hero.png", type: "image/png" },
@@ -32,14 +32,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="light" style={{ colorScheme: 'light' }} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" type="image/png" />
         <link rel="shortcut icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" type="image/png" />
         <link rel="apple-touch-icon" href="/Assets/Images/F360 Logo_without_bg_hero.png" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `document.documentElement.classList.add('light');document.documentElement.style.colorScheme='light';`,
+            __html: `document.documentElement.classList.add('light');document.documentElement.classList.remove('dark');document.documentElement.style.colorScheme='light';try{localStorage.setItem('f360-theme','light')}catch(e){}`,
           }}
         />
       </head>

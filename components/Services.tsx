@@ -24,6 +24,8 @@ const services = [
       'UI/UX Design',
       'CMS Solutions',
       'Maintenance & Support',
+      'Web Application Development',
+      'API & Third-Party Integrations',
     ],
     gradient: 'from-blue-500 to-cyan-500',
     bg: 'from-blue-900/30 to-cyan-900/15',
@@ -40,6 +42,8 @@ const services = [
       'Keyword Research',
       'SEO Audits',
       'Schema & Voice Search Optimisation',
+      'Competitor SEO Analysis',
+      'Content & Performance Optimisation',
     ],
     gradient: 'from-green-500 to-teal-500',
     bg: 'from-green-900/30 to-teal-900/15',
@@ -56,6 +60,8 @@ const services = [
       'Paid Social Advertising',
       'Campaign Management',
       'Social Media Optimisation',
+      'Influencer & Creator Marketing',
+      'Analytics & Performance Reporting',
     ],
     gradient: 'from-pink-500 to-rose-500',
     bg: 'from-pink-900/30 to-rose-900/15',
@@ -71,6 +77,9 @@ const services = [
       'Workflow Automation',
       'AI Knowledge Base Development',
       'Custom AI Integrations',
+      'AI-Powered Business Tools',
+      'Process Automation & Optimisation',
+      'AI Data Analysis & Insights',
     ],
     gradient: 'from-purple-500 to-indigo-500',
     bg: 'from-purple-900/30 to-indigo-900/15',
@@ -87,6 +96,8 @@ const services = [
       'Brand Guidelines',
       'Marketing Collateral',
       'Brand Positioning',
+      'Social Media Branding',
+      'Creative Campaign Design',
     ],
     gradient: 'from-orange-500 to-yellow-500',
     bg: 'from-orange-900/30 to-yellow-900/15',
@@ -102,6 +113,9 @@ const services = [
       'Data Backup & Recovery',
       'Cloud Security',
       'Performance Monitoring',
+      'Cloud Optimisation',
+      'Server & Database Management',
+      'Disaster Recovery Solutions',
     ],
     gradient: 'from-cyan-500 to-blue-500',
     bg: 'from-cyan-900/30 to-blue-900/15',
@@ -149,7 +163,7 @@ export default function Services() {
               return (
                 <div
                   key={title}
-                  className="perspective w-full h-[245px]"
+                  className="perspective w-full h-[270px]"
                   onClick={() => toggleFlip(i)}
                 >
                   <div
@@ -177,39 +191,27 @@ export default function Services() {
                       />
                     </div>
 
-                    {/* ================= BACK FACE (Other data: Description + Key Services + CTA) ================= */}
-                    <div className="card-face card-back absolute inset-0 bg-[#0b1729] border border-blue-500/30 rounded-2xl px-4 py-0 flex flex-col justify-center gap-y-3 overflow-hidden shadow-xl">
+                    {/* ================= BACK FACE (Key Services) ================= */}
+                    <div className="card-face card-back absolute inset-0 bg-[#0b1729] border border-blue-500/30 rounded-2xl px-4 py-4 flex flex-col justify-center overflow-hidden shadow-xl">
                       {/* Key Services Grid */}
                       <div className="m-0 p-0">
-                        <span className="text-[11px] font-semibold uppercase tracking-wider text-blue-400 block mb-1.5">
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-blue-400 block mb-2 text-center">
                           Key Services
                         </span>
-                        <ul className="grid grid-cols-2 gap-x-2.5 gap-y-1.5 text-white/90">
+                        <ul className="grid grid-cols-2 gap-x-2 gap-y-2 text-white/90">
                           {keyServices.map((ks, idx) => (
-                            <li key={idx} className="flex items-center gap-1.5">
+                            <li key={idx} className="flex items-start gap-1.5">
                               <span
-                                className="w-1.5 h-1.5 rounded-full shrink-0"
+                                className="w-1.5 h-1.5 rounded-full shrink-0 mt-1"
                                 style={{
                                   backgroundColor: accentColor,
                                   boxShadow: `0 0 5px ${accentColor}`,
                                 }}
                               />
-                              <span className="leading-tight text-white/90 text-[11px]">{ks}</span>
+                              <span className="leading-tight text-white/90 text-[10.5px] sm:text-[11px]">{ks}</span>
                             </li>
                           ))}
                         </ul>
-                      </div>
-
-                      {/* Contact CTA */}
-                      <div className="m-0 p-0">
-                        <Link
-                          href="/process"
-                          onClick={(e) => e.stopPropagation()}
-                          className={`w-full inline-flex items-center justify-between px-3.5 py-2 rounded-lg text-xs font-semibold bg-gradient-to-r ${gradient} !text-white shadow-sm hover:shadow-blue-500/30 hover:scale-[1.01] transition-all`}
-                        >
-                          <span className="!text-white">Get In Touch</span>
-                          <ArrowRight size={12} className="!text-white" />
-                        </Link>
                       </div>
                     </div>
                   </div>
@@ -217,6 +219,19 @@ export default function Services() {
               )
             }
           )}
+        </div>
+
+        {/* Centered "Our Process" Bar */}
+        <div className="mt-14 flex justify-center">
+          <Link
+            href="/process"
+            className="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 border border-white/15"
+          >
+            <span>Our Process</span>
+            <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-200">
+              <ArrowRight size={14} className="text-white" />
+            </span>
+          </Link>
         </div>
       </div>
     </section>

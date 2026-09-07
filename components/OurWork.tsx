@@ -1,40 +1,32 @@
 'use client'
 
-import { ExternalLink, Play } from 'lucide-react'
-
-const projects = [
+const reelProjects = [
   {
-    title: 'E-Commerce Brand Launch',
-    category: 'Social Media',
-    thumbnail: '/work/project1.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: 'Full social media strategy + reels for a fashion brand',
+    id: 'C5JVtCgt7km',
+    pageName: 'f360_meme',
+    embedUrl: 'https://www.instagram.com/reel/C5JVtCgt7km/embed/',
+    instagramUrl: 'https://www.instagram.com/reel/C5JVtCgt7km/',
+    likes: '14.2K',
   },
   {
-    title: 'Real Estate Campaign',
-    category: 'Ads Management',
-    thumbnail: '/work/project2.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: '3x lead generation through targeted Meta ads',
+    id: 'Db-AFa3N_mW',
+    pageName: 'india360feed',
+    embedUrl: 'https://www.instagram.com/reel/Db-AFa3N_mW/embed/',
+    instagramUrl: 'https://www.instagram.com/reel/Db-AFa3N_mW/',
+    likes: '10.5K',
   },
   {
-    title: 'EdTech Website',
-    category: 'Web Development',
-    thumbnail: '/work/project3.jpg',
-    link: 'https://www.instagram.com/f360itsolutions',
-    description: 'Next.js website with LMS integration',
+    id: 'DXnPZE5sTyo',
+    pageName: 'todayinbharat',
+    embedUrl: 'https://www.instagram.com/reel/DXnPZE5sTyo/embed/',
+    instagramUrl: 'https://www.instagram.com/reel/DXnPZE5sTyo/',
+    likes: '18.9K',
   },
 ]
 
-const categoryColors: Record<string, string> = {
-  'Social Media': 'bg-pink-500/20 text-pink-300 border-pink-500/30',
-  'Ads Management': 'bg-orange-500/20 text-orange-300 border-orange-500/30',
-  'Web Development': 'bg-blue-500/20 text-blue-300 border-blue-500/30',
-}
-
 export default function OurWork() {
   return (
-    <section id="work" className="bg-[#050d1f] text-white py-24 scroll-mt-20">
+    <section id="work" className="bg-[#050d1f] text-white py-12 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-3 block">
@@ -46,53 +38,57 @@ export default function OurWork() {
               Work
             </span>
           </h2>
-          <p className="text-white/50 mt-4 max-w-xl mx-auto">
-            Click any project to view the full reel or case study
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((project, i) => (
-            <a
-              key={i}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative bg-[#0b1729] border border-white/10 rounded-2xl overflow-hidden hover:border-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/30 block"
+          {reelProjects.map((reel) => (
+            <div
+              key={reel.id}
+              className="bg-white border border-white/10 hover:border-blue-400/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/30 flex flex-col"
             >
-              {/* Thumbnail */}
-              <div className="relative h-56 bg-gradient-to-br from-blue-900/40 to-[#080f22] flex items-center justify-center overflow-hidden">
-                <div
-                  className="absolute inset-0 opacity-30"
-                  style={{
-                    background: `linear-gradient(135deg, hsl(${(i * 47 + 200) % 360}, 70%, 30%), hsl(${(i * 47 + 240) % 360}, 70%, 20%))`
-                  }}
+              {/* Instagram Reel Embed with bottom cropped to remove View more link & action icons */}
+              <div className="relative w-full h-[470px] bg-white overflow-hidden">
+                <iframe
+                  src={reel.embedUrl}
+                  className="w-full h-[620px] border-0 overflow-hidden"
+                  scrolling="no"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                  title={reel.pageName}
                 />
-                <div className="relative z-10 flex flex-col items-center gap-3">
-                  <div className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-blue-600/50 transition-all duration-300">
-                    <Play size={22} className="!text-white ml-1" />
-                  </div>
-                  <span className="!text-white/90 text-xs font-medium">View Project</span>
-                </div>
-
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-all duration-300" />
               </div>
 
-              {/* Info */}
-              <div className="p-5">
-                <div className="flex items-center justify-between mb-2">
-                  <span className={`text-xs px-3 py-1 rounded-full border font-medium ${categoryColors[project.category] || 'bg-blue-500/20 text-blue-300 border-blue-500/30'}`}>
-                    {project.category}
+              {/* Bottom bar: Only Like icon and Like count, plus Open Instagram in new tab */}
+              <div className="bg-white px-4 py-3 border-t border-gray-100 flex items-center justify-between">
+                <div className="inline-flex items-center gap-2 text-gray-800">
+                  <svg
+                    className="w-5 h-5 text-red-500 fill-red-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <span className="font-semibold text-sm text-gray-900">
+                    {reel.likes} <span className="text-gray-500 font-normal">likes</span>
                   </span>
-                  <ExternalLink size={14} className="text-white/50 group-hover:text-blue-400 transition-colors" />
                 </div>
-                <h3 className="text-white font-semibold text-base mb-1 group-hover:text-blue-300 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-white/50 text-sm">{project.description}</p>
+
+                <a
+                  href={reel.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 px-3 py-1.5 rounded-full transition-colors"
+                >
+                  <span>Open Instagram</span>
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

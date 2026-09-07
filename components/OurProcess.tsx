@@ -25,7 +25,7 @@ const steps = [
     icon: Rocket,
     step: '04',
     title: 'Execution',
-    desc: 'Our team executes with precision — from content creation to campaigns, websites to branding.',
+    desc: 'Our team executes with precision, from content creation to campaigns, websites to branding.',
   },
   {
     icon: BarChart2,

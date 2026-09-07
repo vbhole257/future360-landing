@@ -345,10 +345,11 @@ html.light .trust-avatars span {
 /* ---------- Hero visual ---------- */
 .hero-visual {
   position: relative;
-  height: 560px;
+  height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -65px;
 }
 
 .hero-glow {
@@ -392,32 +393,52 @@ html.light .trust-avatars span {
 
 .logo-stage {
   position: relative;
-  width: 340px;
+  width: 400px;
+  max-width: 100%;
   aspect-ratio: 773 / 436;
   z-index: 5;
+  top: -15px;
   opacity: 0;
-  transform: scale(.9);
-  filter: blur(20px) drop-shadow(0 16px 32px rgba(37,99,235,.2));
-  transition: opacity .8s cubic-bezier(0.16,1,0.3,1), transform .8s cubic-bezier(0.16,1,0.3,1), filter .8s cubic-bezier(0.16,1,0.3,1);
-  will-change: opacity, transform, filter;
+  transform: scale(.95);
+  filter: drop-shadow(0 12px 28px rgba(37,99,235,.2));
+  transition: opacity .8s cubic-bezier(0.16,1,0.3,1), transform .8s cubic-bezier(0.16,1,0.3,1), filter .35s ease;
+  will-change: opacity, transform;
 }
 .logo-stage.is-revealed {
   opacity: 1;
   transform: scale(1);
-  filter: blur(0px) drop-shadow(0 16px 32px rgba(37,99,235,.2));
+  filter: drop-shadow(0 12px 28px rgba(37,99,235,.2));
 }
 .logo-stage.is-idle {
   animation: heroLogoFloat 5s ease-in-out infinite;
 }
 .logo-stage:hover {
-  filter: blur(0px) drop-shadow(0 20px 40px rgba(37,99,235,.3));
+  filter: drop-shadow(0 16px 36px rgba(37,99,235,.3));
 }
 .logo-stage:hover img { transform: scale(1.03); }
 @keyframes heroLogoFloat {
   0%, 100% { transform: scale(1) translate(var(--px,0px), var(--py,0px)); }
   50% { transform: scale(1) translate(var(--px,0px), calc(var(--py,0px) - 5px)); }
 }
-.logo-stage img { width: 100%; height: 100%; display: block; object-fit: contain; transition: transform .35s cubic-bezier(0.33,1,0.68,1); }
+.logo-stage img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform .35s cubic-bezier(0.33,1,0.68,1);
+  /* Defringe white outline in dark mode: contracts bright edges into background */
+  filter: contrast(1.03) brightness(0.98);
+}
+
+html.light .logo-stage {
+  filter: drop-shadow(0 10px 24px rgba(37,99,235,.15));
+}
+html.light .logo-stage img {
+  filter: none;
+}
+html.light .logo-stage:hover {
+  filter: drop-shadow(0 14px 30px rgba(37,99,235,.22));
+}
 
 .logo-sweep {
   position: absolute;
@@ -493,14 +514,15 @@ html.light .reference-mobile-menu { border-color: rgba(15,23,42,.1); }
   .hero-actions { justify-content: center; }
   .trust-strip { justify-content: center; }
   .hero-visual { height: 440px; margin-top: 20px; }
+  .logo-stage { width: 360px; }
 }
 @media (max-width: 720px) {
   .reference-navbar { top: 12px; width: 94%; border-radius: 28px; }
   .reference-navbar:has(.reference-mobile-menu) { border-radius: 26px; }
   .reference-navbar-inner { min-height: 58px; padding: 8px 15px; }
   .hero h1.stair-tagline { --step-offset: 28px; }
-  .hero-visual { height: 400px; }
-  .logo-stage { width: 230px; }
+  .hero-visual { height: 380px; margin-top: 15px; }
+  .logo-stage { width: 280px; }
   .trust-strip { margin-top: 30px; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -7,12 +7,13 @@ const logos = [
   '/Assets/Images/clients/Buildfab Logo.png',
   '/Assets/Images/clients/COTBAY Logo.png',
   '/Assets/Images/clients/Envision 3D Logo.png',
-  '/Assets/Images/clients/I360feed logo.png',
+  '/Assets/Images/clients/India360feed Logo.png',
   '/Assets/Images/clients/Magnoux Logo.png',
   '/Assets/Images/clients/Nidhishree Logo.png',
   '/Assets/Images/clients/PTB Logo.png',
   '/Assets/Images/clients/Shiva Logo.png',
   '/Assets/Images/clients/TIB static.png',
+  '/Assets/Images/clients/Xgnr8.png',
 ]
 
 export default function Clients() {

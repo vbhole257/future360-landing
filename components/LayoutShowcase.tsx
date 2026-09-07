@@ -1,9 +1,9 @@
 'use client'
 
 const mockups = [
-  { label: '@f360itsolutions', likes: '2.4K', screenshot: '/Assets/Images/Look and feel 1.png' },
-  { label: 'Campaign Results', likes: '1.8K', screenshot: '/Assets/Images/Look and feel 2.jpg' },
-  { label: 'Brand Launch', likes: '3.1K', screenshot: '/Assets/Images/Look and feel 3.jpg' },
+  { label: '@india360feed', likes: '20K', screenshot: '/Assets/Images/India360Feed.jpg' },
+  { label: 'F360 Memes', likes: '21.8K', screenshot: '/Assets/Images/Look and feel 2.jpg' },
+  { label: 'Magnoux tattooz', likes: '13.1K', screenshot: '/Assets/Images/Look and feel 3.jpg' },
 ]
 
 export default function LayoutShowcase() {
@@ -28,7 +28,7 @@ export default function LayoutShowcase() {
             </span>
           </h2>
           <p className="text-white/50 mt-4 max-w-xl mx-auto">
-            A glimpse into our Instagram — content that converts.
+            A glimpse into our Instagram, content that converts.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function LayoutShowcase() {
               </div>
 
               {/* Label */}
-              <p className="text-center text-white/50 text-xs mt-4">{item.label}</p>
+              {/* <p className="text-center text-white/50 text-xs mt-4">{item.label}</p> */}
             </div>
           ))}
         </div>
@@ -83,7 +83,7 @@ export default function LayoutShowcase() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white/20 hover:border-blue-500 text-white/80 hover:text-blue-400 px-6 py-3 rounded-full text-sm transition-all duration-200"
           >
-            Follow us on Instagram @f360itsolutions
+            Follow us on Instagram @f360_meme
           </a>
         </div>
       </div>

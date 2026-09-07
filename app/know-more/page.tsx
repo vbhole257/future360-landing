@@ -29,7 +29,7 @@ export default function KnowMorePage() {
             </span>
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Our story, how we work, and everything we offer — all in one place.
+            Our story, how we work, and everything we offer, all in one place.
           </p>
         </div>
 
@@ -46,17 +46,17 @@ export default function KnowMorePage() {
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
               <h3 className="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-4">Our Vision</h3>
               <p className="text-white/70 leading-relaxed">
-                We envision a future where digital growth is smart, sustainable, and accessible to all — where brands don&apos;t just survive online, they thrive with confidence, clarity, and results that matter.
+                We envision a future where digital growth is smart, sustainable, and accessible to all, where brands don&apos;t just survive online, they thrive with confidence, clarity, and results that matter.
               </p>
             </div>
           </div>
 
           <div className="mt-8 bg-gradient-to-br from-blue-600/10 to-cyan-600/5 border border-blue-500/20 rounded-2xl p-8">
             <p className="text-white/80 leading-relaxed text-lg">
-              At F360 IT Solutions, we believe great work isn&apos;t just about going digital — it&apos;s about being <strong className="text-white">impactful</strong>. Founded in 2023 in Indore, we&apos;re a hybrid team combining creative firepower, strategic clarity, and cutting-edge tech to grow brands with purpose.
+              At F360 IT Solutions, we believe great work isn&apos;t just about going digital, it&apos;s about being <strong className="text-white">impactful</strong>. Founded in 2023 in Indore, we&apos;re a hybrid team combining creative firepower, strategic clarity, and cutting-edge tech to grow brands with purpose.
             </p>
             <p className="text-white/60 mt-4 leading-relaxed">
-              We leverage AI not just to optimise performance, but to personalise experiences, predict trends, and drive smarter decision-making for our clients — faster, sharper, and at scale. <span className="text-blue-400 font-medium">Strategy + Storytelling + AI = Future-ready growth.</span>
+              We leverage AI not just to optimise performance, but to personalise experiences, predict trends, and drive smarter decision-making for our clients, faster, sharper, and at scale. <span className="text-blue-400 font-medium">Strategy + Storytelling + AI = Future-ready growth.</span>
             </p>
           </div>
         </section>
@@ -69,7 +69,7 @@ export default function KnowMorePage() {
               { icon: MessageSquare, step: '01', title: 'Discovery Call', desc: 'We understand your business, goals, target audience, and current challenges in a detailed consultation.' },
               { icon: Search, step: '02', title: 'Research & Audit', desc: 'Deep dive into your market, competitors, and digital presence to identify opportunities and gaps.' },
               { icon: Lightbulb, step: '03', title: 'Strategy Building', desc: 'We craft a custom 360° growth strategy combining creativity, tech, and data-driven insights.' },
-              { icon: Rocket, step: '04', title: 'Execution', desc: 'Our team executes with precision — from content creation to campaigns, websites to branding.' },
+              { icon: Rocket, step: '04', title: 'Execution', desc: 'Our team executes with precision, from content creation to campaigns, websites to branding.' },
               { icon: BarChart2, step: '05', title: 'Track & Optimise', desc: 'Continuous monitoring, reporting, and refinement to maximize your ROI over time.' },
             ].map(({ icon: Icon, step, title, desc }, i) => (
               <div key={i} className="flex items-start gap-5 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-blue-400/30 transition-all duration-200">
@@ -93,7 +93,7 @@ export default function KnowMorePage() {
             {[
               {
                 icon: Globe, title: 'Website Development',
-                desc: 'We create responsive, SEO-friendly, and high-converting websites tailored to your business goals — e-commerce portals, corporate sites, or content hubs.',
+                desc: 'We create responsive, SEO-friendly, and high-converting websites tailored to your business goals: e-commerce portals, corporate sites, or content hubs.',
                 tools: ['React.js', 'Next.js', 'WordPress', 'Shopify', 'Figma', 'Node.js']
               },
               {
@@ -108,7 +108,7 @@ export default function KnowMorePage() {
               },
               {
                 icon: Palette, title: 'Branding & Identity Design',
-                desc: 'We build brands that are not just seen — but remembered. From logo to language, we shape your identity to stand out and stay consistent.',
+                desc: 'We build brands that are not just seen, but remembered. From logo to language, we shape your identity to stand out and stay consistent.',
                 tools: ['Adobe Illustrator', 'Photoshop', 'Figma', 'Midjourney']
               },
               {

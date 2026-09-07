@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 export default function Hero() {
@@ -17,6 +17,80 @@ export default function Hero() {
   const fiCloudRef = useRef<HTMLDivElement | null>(null)
   const fiSeoRef = useRef<HTMLDivElement | null>(null)
   const fiBrandRef = useRef<HTMLDivElement | null>(null)
+
+  const [logoSrc, setLogoSrc] = useState('/Assets/Images/F360 Logo_without_bg_hero.png')
+
+  // useEffect(() => {
+  //   const updateLogo = () => {
+  //     const isLight = document.documentElement.classList.contains('light')
+  //     if (isLight) {
+  //       setLogoSrc('/Assets/Images/F360 Logo_without_bg_hero.png')
+  //       return
+  //     }
+
+  //     // In Dark mode, render the logo with crisp white "360" and "IT SOLUTIONS" text
+  //     const img = new window.Image()
+  //     img.crossOrigin = 'anonymous'
+  //     img.src = '/Assets/Images/F360 Logo_without_bg_hero.png'
+  //     img.onload = () => {
+  //       try {
+  //         const c = document.createElement('canvas')
+  //         c.width = img.naturalWidth
+  //         c.height = img.naturalHeight
+  //         const ctx = c.getContext('2d')
+  //         if (!ctx) return
+  //         ctx.drawImage(img, 0, 0)
+  //         const imgData = ctx.getImageData(0, 0, c.width, c.height)
+  //         const d = imgData.data
+
+  //         for (let i = 0; i < d.length; i += 4) {
+  //           const alpha = d[i + 3]
+  //           if (alpha > 15) {
+  //             const r = d[i]
+  //             const g = d[i + 1]
+  //             const b = d[i + 2]
+
+  //             // Dark navy numbers "360" (#1b2848 -> r ~27, g ~40, b ~72)
+  //             if (r < 65 && g < 75 && b < 115) {
+  //               d[i] = 255
+  //               d[i + 1] = 255
+  //               d[i + 2] = 255
+  //             }
+  //             // Neutral grey "IT SOLUTIONS" text (#7e899b -> r ~126, g ~137, b ~155)
+  //             else if (
+  //               Math.abs(r - g) < 25 &&
+  //               Math.abs(g - b) < 25 &&
+  //               Math.abs(r - b) < 35 &&
+  //               r < 190 &&
+  //               !(g > 110 && b > 130 && r < 50)
+  //             ) {
+  //               d[i] = 240
+  //               d[i + 1] = 245
+  //               d[i + 2] = 255
+  //             }
+  //           }
+  //         }
+
+  //         ctx.putImageData(imgData, 0, 0)
+  //         setLogoSrc(c.toDataURL('image/png'))
+  //       } catch {
+  //         setLogoSrc('/Assets/Images/F360 Logo_without_bg_hero.png')
+  //       }
+  //     }
+  //   }
+
+  //   updateLogo()
+
+  //   const observer = new MutationObserver(() => {
+  //     updateLogo()
+  //   })
+  //   observer.observe(document.documentElement, {
+  //     attributes: true,
+  //     attributeFilter: ['class'],
+  //   })
+
+  //   return () => observer.disconnect()
+  // }, [])
 
   useEffect(() => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -293,15 +367,15 @@ export default function Hero() {
       <div className="hero-grid">
         <div className="hero-copy">
           <span className="badge">Future 360 IT Solutions</span>
-          <h1 className="stair-tagline" aria-label="Innovate. Integrate. Elevate.">
+          <h1 className="stair-tagline" aria-label="Innovate Integrate Elevate">
             <span className="stair-line sl1" style={{ '--n': 0, animationDelay: '0.1s' } as React.CSSProperties}>
-              Innovate.
+              Innovate
             </span>
             <span className="stair-line sl2" style={{ '--n': 1, animationDelay: '0.3s' } as React.CSSProperties}>
-              Integrate.
+              Integrate
             </span>
             <span className="stair-line sl3" style={{ '--n': 2, animationDelay: '0.5s' } as React.CSSProperties}>
-              Elevate.
+              Elevate
             </span>
           </h1>
 
@@ -316,19 +390,19 @@ export default function Hero() {
                 else window.location.hash = '#contact'
               }}
             >
-              Start Your Project
-            </a>
-            <a
-              href="#work"
-              className="btn btn-secondary"
-              onClick={(e) => {
-                e.preventDefault()
-                const el = document.getElementById('work')
-                if (el) el.scrollIntoView({ behavior: 'smooth' })
-                else window.location.hash = '#work'
-              }}
-            >
-              View Our Work
+              Get In Touch
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
             </a>
           </div>
 
@@ -409,11 +483,12 @@ export default function Hero() {
           {/* Central Logo with Sweep Light */}
           <div className="logo-stage" ref={logoStageRef} role="img" aria-label="Future 360 IT Solutions logo">
             <Image
-              src="/Assets/Images/F360 Logo_without_bg_hero.png"
+              src={logoSrc}
               alt="Future 360 IT Solutions"
-              width={520}
-              height={295}
+              width={600}
+              height={330}
               priority
+              unoptimized={logoSrc.startsWith('data:')}
             />
             <div className="logo-sweep" ref={sweepRef} />
           </div>

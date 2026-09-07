@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="md:max-w-[280px]">
           <Image src="/Assets/Images/F360 Logo_without_bg_hero.png" alt="F360 Logo" width={100} height={40} className="h-10 w-auto mb-4" />
           <p className="text-sm text-white/50 leading-relaxed">
-            Innovate. Integrate. Elevate. — Helping modern businesses grow smarter, faster, and better.
+            Innovate Integrate Elevate | Helping modern businesses grow smarter, faster, and better.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
             Privacy policy
           </Link>
           <span className="text-white/30">|</span>
-          <Link href="/privacy" className="hover:text-blue-400 transition-colors">
+          <Link href="/disclaimer" className="hover:text-blue-400 transition-colors">
             Disclaimer
           </Link>
         </div>
@@ -82,7 +82,7 @@ export default function Footer() {
         href="https://wa.me/918889995985"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 left-6 z-50 w-12 h-12 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-900/50 transition-all duration-200 hover:scale-110"
+        className="fixed bottom-20 md:bottom-24 left-6 z-50 w-12 h-12 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-900/50 transition-all duration-200 hover:scale-110"
       >
         <Image src="/Assets/Images/whatsapp-removebg-preview.png" alt="WhatsApp" width={12} height={12} className="w-12 h-12" />
       </a>

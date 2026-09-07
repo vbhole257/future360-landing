@@ -142,8 +142,8 @@ export default function Testimonials() {
                   </div>
 
                   {/* Feedback text */}
-                  <p className="text-[#334155] text-sm sm:text-base leading-relaxed italic mb-8 font-normal">
-                    &ldquo;{item.feedback}&rdquo;
+                  <p className="text-[#334155] text-sm sm:text-base leading-relaxed mb-8 font-normal">
+                    {item.feedback}
                   </p>
                 </div>
 

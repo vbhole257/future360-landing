@@ -6,21 +6,21 @@ const reelProjects = [
     pageName: 'f360_meme',
     embedUrl: 'https://www.instagram.com/reel/C5JVtCgt7km/embed/',
     instagramUrl: 'https://www.instagram.com/reel/C5JVtCgt7km/',
-    likes: '14.2K',
+    likes: '484.2K',
   },
   {
     id: 'Db-AFa3N_mW',
     pageName: 'india360feed',
     embedUrl: 'https://www.instagram.com/reel/Db-AFa3N_mW/embed/',
     instagramUrl: 'https://www.instagram.com/reel/Db-AFa3N_mW/',
-    likes: '10.5K',
+    likes: '27K',
   },
   {
     id: 'DXnPZE5sTyo',
     pageName: 'todayinbharat',
     embedUrl: 'https://www.instagram.com/reel/DXnPZE5sTyo/embed/',
     instagramUrl: 'https://www.instagram.com/reel/DXnPZE5sTyo/',
-    likes: '18.9K',
+    likes: '29.2K',
   },
 ]
 

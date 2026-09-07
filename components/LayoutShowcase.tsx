@@ -78,7 +78,7 @@ export default function LayoutShowcase() {
         {/* CTA */}
         <div className="text-center mt-14">
           <a
-            href="https://www.instagram.com/f360itsolutions"
+            href="https://www.instagram.com/f360_meme"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white/20 hover:border-blue-500 text-white/80 hover:text-blue-400 px-6 py-3 rounded-full text-sm transition-all duration-200"

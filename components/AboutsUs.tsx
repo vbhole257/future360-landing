@@ -16,7 +16,7 @@ export default function AboutUs() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden border border-blue-500/20 shadow-2xl shadow-blue-900/30">
               <Image
-                src="/Assets/Images/office.jpg"
+                src="/Assets/Images/office.png"
                 alt="Future 360 IT Solutions Office Workspace in Indore"
                 width={700}
                 height={525}

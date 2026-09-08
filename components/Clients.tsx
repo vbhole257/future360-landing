@@ -3,9 +3,12 @@
 import Image from 'next/image'
 
 const logos = [
+  '/Assets/Images/clients/Amenita logo.png',
+  '/Assets/Images/clients/Avisha logo.png',
   '/Assets/Images/clients/Balaji education Logo.png',
   '/Assets/Images/clients/Buildfab Logo.png',
   '/Assets/Images/clients/COTBAY Logo.png',
+  '/Assets/Images/clients/Craving creation.png',
   '/Assets/Images/clients/Envision 3D Logo.png',
   '/Assets/Images/clients/India360feed Logo.png',
   '/Assets/Images/clients/Magnoux Logo.png',
@@ -13,6 +16,8 @@ const logos = [
   '/Assets/Images/clients/PTB Logo.png',
   '/Assets/Images/clients/Shiva Logo.png',
   '/Assets/Images/clients/TIB static.png',
+  '/Assets/Images/clients/Taara tresor.png',
+  '/Assets/Images/clients/Uchaai logo.png',
   '/Assets/Images/clients/Xgnr8.png',
 ]
 

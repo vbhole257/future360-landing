@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
-import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -123,11 +123,6 @@ export default function Testimonials() {
                 key={idx}
                 className="keen-slider__slide bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between relative group"
               >
-                {/* Quote Icon watermark */}
-                <div className="absolute top-6 right-6 text-blue-500/10 group-hover:text-blue-500/20 transition-colors">
-                  <Quote size={48} />
-                </div>
-
                 <div>
                   {/* Stars + Tag */}
                   <div className="flex items-center justify-between gap-2 mb-6">
